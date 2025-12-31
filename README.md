@@ -3,17 +3,17 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 The **ICD Version Mapping Tool** is a research-oriented clinical informatics system designed to **translate diagnosis codes from legacy ICD versions (ICD-9, ICD-10, ICD-10-CM)** into **ICD-11 (MMS)**.
 
 The primary goal is to **maximize dataset usability** by enabling historical and multi-source datasets to be harmonized under a single, modern ICD standard.
 
-> ⚠️ This tool focuses on **ICD-to-ICD mapping**, not automated clinical coding from free text.
+> This tool focuses on **ICD-to-ICD mapping**, not automated clinical coding from free text.
 
 ---
 
-## ❓ Why This Tool Is Needed
+## Why This Tool Is Needed
 
 Healthcare datasets are fragmented across ICD versions:
 
@@ -36,27 +36,27 @@ This project addresses that gap.
 
 ---
 
-## 🎯 Purpose and Use Cases
+## Purpose and Use Cases
 
 ### Primary Purpose
 > Enable reuse of legacy ICD-9 and ICD-10 datasets by translating them into ICD-11.
 
 ### Key Use Cases
-- 📊 Research data harmonization  
-- 🧬 Longitudinal and population studies  
-- 🤖 Machine learning and benchmarking experiments  
-- 🧾 Secondary analysis of administrative or registry data  
+- Research data harmonization  
+- Longitudinal and population studies  
+- Machine learning and benchmarking experiments  
+- Secondary analysis of administrative or registry data  
 
 ### What This Tool Is **Not**
-- ❌ Not an automated clinical coder  
-- ❌ Not a replacement for professional coders  
-- ❌ Not a regulatory or billing system  
+- Not an automated clinical coder  
+- Not a replacement for professional coders  
+- Not a regulatory or billing system  
 
 This is a **decision-support and data harmonization tool**.
 
 ---
 
-## 🧠 Why Simple Crosswalks Are Insufficient
+## Why Simple Crosswalks Are Insufficient
 
 ICD revisions are **not backward-compatible taxonomies**.
 
@@ -66,11 +66,11 @@ Key challenges:
 - **Conceptual redesign** in ICD-11 (Foundation model, MMS, post-coordination)
 - **Incomplete coverage** of ICD-10-CM in WHO tables
 
-➡️ As a result, mapping is a **reasoning and validation problem**, not a lookup problem.
+As a result, mapping is a **reasoning and validation problem**, not a lookup problem.
 
 ---
 
-## 🧩 Design Philosophy
+## Design Philosophy
 
 The tool is built around five core principles:
 
@@ -84,9 +84,9 @@ Ambiguous mappings are **flagged**, not forced.
 
 ---
 
-## 📦 Scope and Versioning
+## Scope and Versioning
 
-### ✅ Version 1 (Current Scope)
+### Version 1 (Current Scope)
 
 **Unidirectional mapping only:**
 - ICD-9 / ICD-9-CM → ICD-11  
@@ -98,7 +98,7 @@ Target:
 
 ---
 
-### 🔁 Version 2 (Planned)
+### Version 2 (Planned)
 
 - Bidirectional mapping:
   - ICD-11 → ICD-10
@@ -108,7 +108,7 @@ Target:
 
 ---
 
-### 🔮 Future Work (Out of Scope)
+### Future Work (Out of Scope)
 
 - SNOMED CT → ICD-O-3 mapping (oncology)
 - ICD-11 post-coordination generation
@@ -117,7 +117,7 @@ Target:
 
 ---
 
-## 🏗️ High-Level Architecture
+## High-Level Architecture
 
 ### Conceptual Pipeline
 
@@ -145,7 +145,7 @@ Using **ICD-10 as an intermediary**:
 
 ---
 
-## 📤 Output Format
+## Output Format
 
 For each source code, the tool returns:
 
@@ -160,7 +160,7 @@ This ensures **transparency, auditability, and safe downstream use**.
 
 ---
 
-## 📊 Evaluation Framework
+## Evaluation Framework
 
 ### Metrics Used
 - Coverage rate  
@@ -178,7 +178,7 @@ This is a **feature**, not a limitation.
 
 ---
 
-## ⚠️ Risk Management and Safety
+## Risk Management and Safety
 
 ### Known Risks
 - Loss of specificity during roll-up
@@ -193,7 +193,7 @@ This is a **feature**, not a limitation.
 
 ---
 
-## 🧠 Gap Statement
+## Gap Statement
 
 > While official crosswalks and equivalence tables exist for ICD transitions, there is currently **no intelligent, explainable, clinically aware system** that performs automated ICD-to-ICD mapping across versions—particularly from ICD-9 and ICD-10 into ICD-11—while quantifying uncertainty and preserving clinical intent.
 
@@ -201,15 +201,15 @@ This tool is designed to fill that gap.
 
 ---
 
-## 🚀 Project Status
+## Project Status
 
-- ✅ Conceptual design completed  
-- ✅ Literature-aligned architecture defined  
-- ⏳ Implementation (V1 batch mapping) in progress  
+- Conceptual design completed  
+- Literature-aligned architecture defined  
+- Implementation (V1 batch mapping) in progress  
 
 ---
 
-## 📌 Next Steps
+## Next Steps
 
 - Implement ICD-10 → ICD-11 batch mapping
 - Add ICD-9 → ICD-11 sequential mapping
@@ -218,7 +218,7 @@ This tool is designed to fill that gap.
 
 ---
 
-## 👤 Author
+## Author
 
 **Abdelrhman Akram Youssef**  
 Biomedical Informatics  
@@ -226,7 +226,7 @@ Nile University
 
 ---
 
-## 📄 License
+## License
 
 This project is intended for **research and academic use**.  
 Licensing details will be finalized upon public release.
